@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bjarne Frölich - Web Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <h2>Bjarne Frölich<span class="accent">.</span></h2>
+                <p class="nav-subtitle">Web Developer</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <canvas id="canvas3d"></canvas>
+        
+        <div class="hero-content">
+            <p class="hero-tag fade-in">&lt;Hallo Welt /&gt;</p>
+            <h1 class="hero-title fade-in">
+                Ich bin Bjarne Frölich,<br>
+                ich erstelle <span class="accent">moderne Web-Erlebnisse</span><br>
+                mit interaktiven Elementen.
+            </h1>
+            <p class="hero-description fade-in">
+                Web Developer mit Fokus auf HTML, CSS und JavaScript. Ich erstelle moderne 
+                und anspruchsvolle Webseiten mit interaktiven 3D-Elementen.
+            </p>
+            <div class="hero-buttons fade-in">
+                <a href="#skills" class="btn btn-primary">Meine Skills ansehen</a>
+                <a href="#contact" class="btn btn-secondary">Kontakt aufnehmen</a>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scrollen</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header scroll-reveal">
+                <h2>Meine Expertise</h2>
+                <p>Kernkompetenzen in moderner Webentwicklung</p>
+            </div>
+
+            <div class="skills-grid">
+                <article class="skill-card scroll-reveal">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Frontend Development</h3>
+                        <p>Entwicklung moderner und anspruchsvoller Webseiten mit HTML, CSS und JavaScript. Spezialisiert auf interaktive Elemente und 3D-Visualisierungen mit Three.js.</p>
+                        <div class="skill-tags">
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>Three.js</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-card scroll-reveal">
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="18" height="18" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M9 21V9"/>
+                        </svg>
+                    </div>
+                    <div class="skill-content">
+                        <h3>DevOps & Tools</h3>
+                        <p>Erfahrung mit Docker/Docker Compose, YML-Strukturen und Konsolen-Management (Linux & Windows). Grundkenntnisse in Java für kleine Anwendungen und Spiele-Plugins.</p>
+                        <div class="skill-tags">
+                            <span>Docker</span>
+                            <span>YML</span>
+                            <span>Linux</span>
+                            <span>Java</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="skill-card skill-card-link scroll-reveal">
+                    <a href="projects.html" class="skill-link-overlay"></a>
+                    <div class="skill-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="3" y="3" width="7" height="7"/>
+                            <rect x="14" y="3" width="7" height="7"/>
+                            <rect x="14" y="14" width="7" height="7"/>
+                            <rect x="3" y="14" width="7" height="7"/>
+                        </svg>
+                    </div>
+                    <div class="skill-content">
+                        <h3>Alle Projekte ansehen</h3>
+                        <p>Entdecke mein Portfolio mit interaktiven 3D-Anwendungen, Web-Plattformen und kreativen Experimenten. Sieh, wie ich Ideen durch Code zum Leben erwecke.</p>
+                        <div class="skill-cta">
+                            <span>Projekte erkunden</span>
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="5" y1="12" x2="19" y2="12"/>
+                                <polyline points="12 5 19 12 12 19"/>
+                            </svg>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="about" class="about">
+        <div class="container-small">
+            <h2 class="scroll-reveal">Über mich</h2>
+            <div class="about-content scroll-reveal">
+                <p>
+                    Ich bin Bjarne Frölich, geboren am 05.04.2009 in Frankfurt am Main. 
+                    Aktuell besuche ich das <span class="accent-text">Gymnasium Riedberg</span> 
+                    mit den Leistungskursen Mathematik und Informatik. Als leidenschaftlicher 
+                    Web Developer erstelle ich moderne und anspruchsvolle Webseiten mit 
+                    interaktiven 3D-Elementen.
+                </p>
+
+                <p>
+                    Meine Expertise umfasst HTML, CSS und JavaScript, sowie Erfahrung mit 
+                    Docker/Docker Compose, YML-Strukturen und Konsolen-Management (Linux & Windows). 
+                    Zusätzlich habe ich kleine Java-Anwendungen und Minecraft-Server-Plugins entwickelt.
+                </p>
+
+                <p>
+                    Neben der Programmierung bin ich seit 2023 als <span class="accent-text">Trainer 
+                    bei Krav-Maga-Taunus</span> tätig. In meiner Freizeit betreibe ich Selbstverteidigung, 
+                    spiele Fußball, gehe kitesurfen, trainiere im Fitnessstudio, spiele Gitarre und 
+                    entwickle Minecraft-Server.
+                </p>
+
+                <div class="tech-stack">
+                    <h3>Tech Stack</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4>Frontend</h4>
+                            <ul>
+                                <li>HTML5 / CSS3</li>
+                                <li>JavaScript (ES6+)</li>
+                                <li>Three.js / WebGL</li>
+                                <li>Responsive Design</li>
+                                <li>Animations & Interactions</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>DevOps & Tools</h4>
+                            <ul>
+                                <li>Docker / Docker Compose</li>
+                                <li>YML / YAML</li>
+                                <li>Linux Terminal</li>
+                                <li>Windows CMD/PowerShell</li>
+                                <li>Git / Version Control</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Weitere Skills</h4>
+                            <ul>
+                                <li>Java (Basics)</li>
+                                <li>Minecraft-Plugins</li>
+                                <li>3D Visualisierung</li>
+                                <li>UI/UX Design</li>
+                                <li>Performance Optimization</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack">
+                    <h3>Ausbildung & Sprachen</h3>
+                    <div class="tech-grid">
+                        <div class="tech-category">
+                            <h4>Ausbildung</h4>
+                            <ul>
+                                <li>Gymnasium Riedberg (seit 2019)</li>
+                                <li>Leistungskurse: Mathematik & Informatik</li>
+                                <li>Grundschule Riedberg (2015-2019)</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Sprachkenntnisse</h4>
+                            <ul>
+                                <li>Deutsch (Muttersprache)</li>
+                                <li>Englisch (fließend)</li>
+                                <li>Spanisch (Grundkenntnisse)</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h4>Berufserfahrung</h4>
+                            <ul>
+                                <li>Trainer bei Krav-Maga-Taunus (seit 2023)</li>
+                                <li>Schülerpraktikum bei H&M Motorradhaus (2024)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact" class="contact">
+        <div class="container-small">
+            <div class="contact-content scroll-reveal">
+                <h2>Lass uns zusammenarbeiten</h2>
+                <p class="contact-description">
+                    Ich bin immer interessiert an neuen Projekten und Möglichkeiten. 
+                    Ob du eine Frage hast oder einfach nur Hallo sagen möchtest, melde dich gerne!
+                </p>
+
+                <a href="mailto:frolichbjarne@gmail.com" class="btn btn-primary btn-large">
+                    Schreib mir eine E-Mail
+                </a>
+
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <h4>Kontakt</h4>
+                        <a href="mailto:frolichbjarne@gmail.com">frolichbjarne@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Bjarne Frölich. Erstellt mit HTML, CSS & Three.js.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.0/build/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
