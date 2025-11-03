@@ -185,7 +185,7 @@ revealOnScroll()
 
 const projectCards = document.querySelectorAll(".project-card")
 
-document.addEventListener("mousemove", (e) => {
+/*document.addEventListener("mousemove", (e) => {
   projectCards.forEach((card) => {
     const rect = card.getBoundingClientRect()
     const x = e.clientX - rect.left
@@ -203,4 +203,4 @@ document.addEventListener("mousemove", (e) => {
       card.style.transform = "translateY(0) rotateX(0) rotateY(0)"
     }
   })
-})
+})*/
